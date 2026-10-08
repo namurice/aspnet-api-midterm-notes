@@ -1,25 +1,19 @@
-create project
-name project midterm
+# ASP.NET Core Web API: Posts & Comments (midterm)
 
-download entityframeworkcore,tools, Microsoft.EntityFrameworkCore.Sqlite.Core and design from nuget
+Midterm project for the .NET course at Caucasus University (2024): a posts-and-comments REST API.
 
-create models folder copy paste from my rep
+- CRUD for posts and comments
+- **Filtering, dynamic sorting and pagination** on posts (`PostsController`)
+- Global **exception-handling middleware**
+- Entity Framework Core with SQLite and migrations
 
-copy paste program.cs
+**Tech:** C# · ASP.NET Core Web API · Entity Framework Core · SQLite · Swagger
 
-copy paste ApplcationDBContext
+<details>
+<summary>My original exam notes</summary>
 
-add commentscontroller and postscontroller.
-
-in postscontroller from 22 to 58 lines is filtering, dynamic sorting, pagination
-
-copy paste appsettings.json file
-
-in package manager console
-Install-Package SQLitePCLRaw.bundle_e_sqlite3
-Add-Migration InitialCreate
-Update-Database
-
-if i dont have filtering/pagination/sorting then ill have handling which is the middlewares folder
-
-if i dont have to do handling then remove 5th and 41st line from program.cs
+- Create the project and install EF Core Tools, `Microsoft.EntityFrameworkCore.Sqlite.Core` and Design from NuGet
+- Add Models, `Program.cs`, `ApplcationDBContext`, and the Posts and Comments controllers
+- Lines 22–58 of `PostsController` contain filtering, dynamic sorting and pagination
+- In the Package Manager Console: `Install-Package SQLitePCLRaw.bundle_e_sqlite3`, `Add-Migration InitialCreate`, `Update-Database`
+</details>
